@@ -22,21 +22,27 @@ body{
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
-    background-color: burlywood;
+    background-color: rgb(59, 71, 71);
+    border: 1px solid;
+    border-radius: 8px;
 }
 
 #bot{
     grid-column: span 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: aqua;
+    background-color: rgb(59, 71, 71);
+    border: 1px solid;
+    border-radius: 8px;
 }
 
 #screenTop, #screenBot{
     width: 240px;
     height: 200px;
-    background-color: #fc0d0d;
-    margin: 10px;
+    background-color: rgb(59, 71, 71);
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
 }
 
 .speaker1, .speaker2{
@@ -77,13 +83,30 @@ body{
 }
 
 #screenTop{
-    grid-row: 1 / span 2;
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #screenBot{
     grid-column: 2;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#screenBot2{
+    width: 92%;
+    height: 92%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 4px;
 }
 
 .buttonLeft{
@@ -117,16 +140,22 @@ body{
 #up{
     rotate: 90deg;
     position: absolute;
+    display: flex;
 }
 
-.rectanguloArrowRight {
+#down{
+    display: flex;
+    position: absolute;
+}
+
+.rectanguloArrowRight{
     display: flex;
     width: 80px;
     height: 20px;
     position: relative;
 }
 
-#vertical {
+#vertical{
     rotate: 90deg;
     position: absolute;
     display: flex;
@@ -138,10 +167,10 @@ body{
     justify-content: space-between;
 }
 
-#Y, #X, #A, #B {
+#Y, #X, #A, #B{
     width: 20px;
     height: 20px;
-    color: black;
+    color: white;
     font-size: 15px;
     border: 2px solid #000;
     border-radius: 10px;
@@ -184,14 +213,15 @@ body{
     display: flex;
 }
 
-#com {
+#com{
+    color: white;
     display: flex;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
     position: relative;
     top: -155px;
-    right: 20px;
+    right: 25px;
 }
 
 .circle{
